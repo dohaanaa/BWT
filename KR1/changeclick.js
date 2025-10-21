@@ -16,5 +16,6 @@ function find_edit(){
     place_node.innerHTML="Pyatigorsk Stavropol region"
 }
 
+
 const node_for_click = document.getElementById("click")
 node_for_click.addEventListener("click",find_edit)
