@@ -1,4 +1,4 @@
 # BWT
 
-https://dohaanaa.github.io/BWT/14-15/01/index.html
+https://dohaanaa.github.io/BWT/KR1/index.html
 <br>
