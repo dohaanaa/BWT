@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по кулинарному искусству</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/021/613/245/non_2x/poker-logo-free-vector.jpg" />
+</head>
+
+<body>
+    <header class="first-header">
+        <h1 align="center" id="headertitle" class="headertitle"><b>Кулинарное искусство</b></h1>
+    </header>
+    <header class="second-header">
+        <h2 align="center">Научись готовить самые вкусные блюда</h2>
+    </header>
+
+    <div class="black-nav">
+        <ul class="nav">
+            <li><a href="./index.html">Главная страница</a></li>
+            <li><a href="./algorithm.html">Пробное тестирование</a></li>
+            <li><a href="./table.html"><img height="20px"
+                        src="https://static.vecteezy.com/system/resources/previews/021/613/245/non_2x/poker-logo-free-vector.jpg"></a>
+            </li>
+            <li><a href="./clickchange.html">Паспорт</a></li>
+            <li><a href="./info.html"><u>Записаться на курс</u></a></li>
+        </ul>
+    </div>
+
+    <h1 id="change" align="center">Запись на курс</h1>
+    <form action="https://yandex.com/search?" target="_blank" id="info" name="info">
+        <div class="allinfo" align="center">
+            <div class="personalinfo">
+                <h4>Личная информация</h4>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" value="Иван" required>
+                <br>
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="surname" value="Иванов" required>
+                <br>
+                <label for="age">Возраст</label>
+                <input type="number" id="age" name="age" value="20" min="18" max="100" required>
+                <br>
+                <label for="student_password">Пароль для личного кабинета:</label>
+                <input type="password" id="student_password" name="student_password" required minlength="6">
+            </div>
+
+            <div class="contactinfo">
+                <h4>Обратная связь</h4>
+                <label for="email">Электронная почта</label>
+                <input type="email" name="email" id="email" value="example@gmail.ru" required>
+                <br>
+                <label for="phone-number">Номер телефона</label>
+                <input type="tel" name="phone-number" id="phone-number" value="+7-920-986-13-13" required>
+                <br>
+                <label for="messenger">Удобный способ связи</label>
+                <select name="messenger" id="messenger">
+                    <option value="tg" selected>Telegram</option>
+                    <option value="max">MAX</option>
+                    <option value="vk">ВКонтакте</option>
+                    <option value="number">Телефон</option>
+                    <option value="email-msg">Эл. почта</option>
+                </select>
+                <br>
+                <label for="preferred_date">Предпочтительная дата начала курса:</label>
+                <input type="date" id="preferred_date" name="preferred_date" min="2025-10-01">
+                <br>
+                <label for="comfytime">Удобное время связи</label>
+                <input type="time" name="comfytime" id="comfytime" value="13:30">
+                <br>
+            </div>
+
+            <div class="workingexp">
+                <h4>Опыт работы</h4>
+                <label for="experience">Опыт а готовке (в годах)</label>
+                <input type="number" name="experience" id="experience" value="0" min="0" max="80">
+                <br>
+                <label>Уровень подготовки:</label>
+                <div class="radio-group">
+                    <input type="radio" id="beginner" name="skill_level" value="beginner" checked>
+                    <label for="beginner">Начинающий</label>
+                    <input type="radio" id="intermediate" name="skill_level" value="intermediate">
+                    <label for="intermediate">Любитель</label>
+                    <input type="radio" id="advanced" name="skill_level" value="advanced">
+                    <label for="advanced">Опытный</label>
+                    <br>
+                    <p valign="bottom"><label>Интересующие направления:</label></p>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="italian" name="cuisine_types" value="italian">
+                        <label for="italian">Итальянская кухня</label>
+
+                        <input type="checkbox" id="french" name="cuisine_types" value="french">
+                        <label for="french">Французская кухня</label>
+
+                        <input type="checkbox" id="asian" name="cuisine_types" value="asian">
+                        <label for="asian">Азиатская кухня</label>
+                        <br>
+                        <p height="15px" valign="bottom"><label for="comments">Дополнительные пожелания:</label></p>
+                        <textarea id="comments" name="comments" placeholder="Ваши пожелания по курсу..."></textarea>
+                    </div>
+                    <br>
+                    <input type="hidden" name="submission_timestamp" value="123456">
+                    <p><label>
+                            <input type="checkbox" name="agreement" required>Согласен с условиями
+                        </label></p>
+                </div>
+                <button type="submit"> Отправить данные </button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
