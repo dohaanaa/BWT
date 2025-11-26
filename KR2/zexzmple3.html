@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Форма для заказа</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./zexample.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header class="card card-header"
+            style="background-image: url(https://img.freepik.com/premium-vector/seamless-pattern-holiday-cakes-with-holiday-candles-pieces-cakes-delicious-desserts-pastries_484720-7725.jpg?semt=ais_hybrid&w=740&q=80);">
+            <div class="card-body">
+                <h3 class="card-titletext-center" align="center">Кондитерская<br>"Bayley"</h3>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link " href="./zexample.html">Главная страница</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./zexample2.html">Ассортимент</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./zexample3.html"><b>Форма для заказа</b></a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--начало уникального содержания страницы-->
+            <div class="card-body">
+                <h5 class="card-title text-center">Форма для заказа</h5>
+
+                <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                    <input name="q" type="hidden" value="search">
+                    <ul class="d-flex flex-row flex-wrap justify-content-around bg-light" id="node_for_insert">
+                        <!--начало генерируемого фрагмента кода -->
+                    </ul>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Ваше имя:</label>
+                            <input type="text" class="form-control" name="customer_name" value="Bayley" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email:</label>
+                            <input type="text" class="form-control" name="customer_email" value="example@gmail.com"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Телефон:</label>
+                            <input type="text" class="form-control" name="customer_phone" value="+7 900 000-00-00"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Адрес доставки:</label>
+                            <input type="text" class="form-control" name="delivery_address" value="Pokrovkiy bulvar"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Вес торта:</label>
+                            <select class="form-select" name="weight" required>
+                                <option value="1">1 кг</option>
+                                <option value="2" selected>2 кг</option>
+                                <option value="3">3 кг</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Начинка торта:</label>
+                            <select class="form-select" name="filling" required>
+                                <option value="choco">Шоколад</option>
+                                <option value="vanila" selected>Ваниль</option>
+                                <option value="berries">Ягоды</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Комментарий к заказу:</label>
+                        <textarea class="form-control" name="order_comment"
+                            rows="3">Особые пожелания к заказу</textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Дата желаемой доставки:</label>
+                        <input type="date" class="form-control" name="desired_delivery_date" value="2025-12-03">
+                    </div>
+
+                    <div class="text-center">
+                        <input type="reset" class="btn btn-secondary me-2" value="Очистить форму">
+                        <input type="submit" class="btn btn-primary" value="Отправить заказ">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--окончание уникального содержания страницы-->
+
+
+
+    <footer class="card card-footer">
+        <div class="card-body" align="center">
+            <p>© Кондитерская "Bayley" - официальный сайт</p>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+<script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/0650_api.js"></script>
+
+</html>
