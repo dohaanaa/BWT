@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Главная страница</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./zexample.css">
+    <style>
+        .nav-link.active {
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+
+        .section-highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #f09582;
+        }
+
+        .graphic-link {
+            transition: transform 0.3s ease;
+        }
+
+        .graphic-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="card card-header"
+            style="background-image: url(https://img.freepik.com/premium-vector/seamless-pattern-holiday-cakes-with-holiday-candles-pieces-cakes-delicious-desserts-pastries_484720-7725.jpg?semt=ais_hybrid&w=740&q=80);">
+            <div class="card-body">
+                <h3 class="card-titletext-center" align="center">Кондитерская<br>"Bayley"</h3>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"> <a class="nav-link active" href="./zexample.html">Главная страница</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./zexample2.html">Ассортимент</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./zexample3.html">Форма для заказа</a></li>
+                </ul>
+            </div>
+
+            <div class="card-body"><!--начало уникального содержания-->
+                <h5 class='card-title text-center' id='top_of_page'>Главная страница</h5>
+                <div align="center">
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="btn-group" role="group">
+                            <a class="btn mt-3 text-center" href="#section_1">О нас</a>
+                            <a class="btn mt-3 text-center" href="#section_2">Отзывы</a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#section_2" class="graphic-link">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Наши трофеи" class="img-fluid" style="max-height: 100px;">
+                            <div class="mt-2">
+                                <small class="text-muted">Нажмите, чтобы посмотреть отзывы</small>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="about sec1">
+                        <h6 class="card-subtitle"><a id="section_1">О нас</a></h6>
+                        <p class="card-text">Наша кондитерская создает сладкие шедевры, которые вы можете заказать не
+                            выходя из дома. Просто выберите понравившийся десерт на нашем сайте, и мы тщательно его
+                            соберем для
+                            вас. Мы используем только натуральные ингредиенты, чтобы порадовать вас безупречным вкусом.
+                            Заберите
+                            свой готовый заказ в удобное время или воспользуйтесь быстрой доставкой.<br> Превратите
+                            любой
+                            день в праздник с нашими десертами, сделанными с любовью. Заказывайте изысканные десерты
+                            онлайн через наш
+                            сайт всего в пару кликов. Мы готовим торты, пирожные и макаруны по вашим пожеланиям. Каждый
+                            десерт —
+                            это свежесть и гарантия превосходного вкуса. Вы можете сами забрать заказ из нашей уютной
+                            кондитерской или заказать доставку. Мы ждем вашего заказа, чтобы подарить вам сладкое
+                            наслаждение.</p>
+
+                        <div class="text-center mt-3">
+                            <a class="btn" href="#top_of_page">к началу страницы</a>
+                        </div>
+                    </div>
+
+                    <div class="about sec2">
+                        <h6 class="card-subtitle"><a id="section_2">Отзывы</a></h6>
+                        <img src="https://onetable.ru/wp-content/uploads/2025/03/gotovyy-bento-tort.jpg"
+                            alt="Бенто торт" class="img" width="300">
+                        <p class="card-text">"Никогда не думала, что онлайн-заказ торта может быть таким
+                            беспроблемным.<br>
+                            Мой заказ привезли минута в минуту! Сам торт был безумно вкусным, свежим, и крем просто таял
+                            во
+                            рту.<br> Огромное спасибо!"</p>
+
+                        <img src="https://british-bakery.ru/upload/iblock/c1b/vgt33q0alw743oo8wwgalom5pcydzcef.jpg"
+                            alt="Фирменный торт" class="img" width="300">
+                        <p class="card-text">"Наконец-то нашла кондитерскую, где идеально сочетаются красота и вкус.<br>
+                            Раньше часто сталкивалась с тем, что красивые торты на фото оказывались сухими или
+                            приторными.<br> Здесь же — идеальный баланс. Отдельный респект за удобный сайт!"</p>
+
+                        <div class="text-center mt-3">
+                            <a class="btn" href="#top_of_page">к началу страницы</a>
+                        </div>
+                    </div>
+                </div><!--окончание уникального содержания-->
+            </div>
+
+
+            <footer class="card card-footer">
+                <div class="card-body" align="center">
+                    <p>© Кондитерская "Bayley" - официальный сайт</p>
+                </div>
+            </footer>
+        </div>
+
+
+        <script crossorigin="anonymous"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
